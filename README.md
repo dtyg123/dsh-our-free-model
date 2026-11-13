@@ -710,8 +710,7 @@ DeepSeek Harness 桌面端（Electron 壳）与 DSH Tauri：使用内核提供�
 
 两条公开免密来源，均直连、不经任何第三方中转；另有第四条出网目标为自建网关（EAC 渠道，见其专节）。
 
-**免费车道：OpenCode 的免密网关，https://opencode.ai/inference/v1/\***（2026-10-14 从
-`/zen/v1` 迁到这里；旧路径对免费模型一律 403 FreeTierError）。
+**免费车道：OpenCode 的免密网关**，<https://opencode.ai/inference/v1/>（2026-10-14 从`/zen/v1` 迁到这里；旧路径对免费模型一律 403 FreeTierError）。
 具体到代码——src/upstream.js 中每一条均通过直接请求核对（路径与指纹：2026-10-14 / 10-16）：
 
 | 用途 | 目标 | 携带何种凭据 |
@@ -721,7 +720,7 @@ DeepSeek Harness 桌面端（Electron 壳）与 DSH Tauri：使用内核提供�
 | 公告与升级清单 | 本仓库的 feed/\*.json：raw.githubusercontent.com 优先，cdn.jsdelivr.net 兜底 | 无 |
 | 出口地区判定 | api.ipify.org / ipinfo.io / ipapi.co，仅用于读取本机公网 IP 与国家码 | 无 |
 
-**Kilo 渠道：Kilo AI 的公共网关，https://api.kilo.ai/api/gateway**（2026-10-06 接入）。
+**Kilo 渠道**：Kilo AI 的公共网关，见 <https://api.kilo.ai/api/gateway>（2026-10-06 接入）
 代码在 src/kilo.js，每一条均于接入当日通过直接请求核对：
 
 | 用途 | 目标 | 携带何种凭据 |
@@ -779,7 +778,7 @@ MIT，见 LICENSE。
 
 ## Star 趋势
 
-图表由 Star History 自动更新，无需手动提交图片。受服务缓存（当前为 24 小时）和 GitHub 图片缓存影响，显示可能延迟，并非秒级实时；点击图表可查看在线趋势。
+图表由 Star History 自动更新。受服务缓存（当前为 24 小时）和 GitHub 图片缓存影响，显示可能延迟，并非秒级实时；点击图表可查看在线趋势。
 
 <a href="https://www.star-history.com/?type=date&amp;repos=Ebony-Vinyl%2Fdsh-our-free-model">
   <picture>
